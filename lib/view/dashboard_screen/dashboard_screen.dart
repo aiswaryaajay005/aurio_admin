@@ -1,3 +1,5 @@
+import 'package:aurio_admin/widgets/aurio_appbar.dart';
+import 'package:aurio_admin/widgets/aurio_drawer.dart';
 import 'package:flutter/material.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -8,19 +10,9 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: AurioDrawer(),
       backgroundColor: const Color(0xFFf5f6f5),
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 1,
-        title: Text(
-          'Dashboard',
-          style: TextStyle(
-            color: Color(0xFF87CEEB),
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        centerTitle: true,
-      ),
+      appBar: AurioAppBar(title: "Dashboard"),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: GridView.count(

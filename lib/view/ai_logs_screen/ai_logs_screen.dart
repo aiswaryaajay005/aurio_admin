@@ -1,3 +1,4 @@
+import 'package:aurio_admin/widgets/aurio_drawer.dart';
 import 'package:flutter/material.dart';
 
 class AILogsScreen extends StatelessWidget {
@@ -13,6 +14,8 @@ class AILogsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: AurioDrawer(),
+
       backgroundColor: const Color(0xFFf5f6f5),
       appBar: AppBar(
         backgroundColor: Colors.white,
