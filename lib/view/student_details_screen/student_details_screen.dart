@@ -10,19 +10,19 @@ class StudentDetailsScreen extends StatelessWidget {
         ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
 
     return Scaffold(
-      backgroundColor: const Color(0xFFf5f6f5),
+      backgroundColor: const Color(0XFF1A1A1A),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0XFF1A1A1A),
         elevation: 1,
         title: Text(
           'Student Details',
           style: TextStyle(
-            color: Color(0xFF87CEEB),
+            color: Color(0XFF4B0082),
             fontWeight: FontWeight.bold,
           ),
         ),
         centerTitle: true,
-        leading: BackButton(color: Color(0xFF87CEEB)),
+        leading: BackButton(color: Color(0XFF4B0082)),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),
@@ -38,7 +38,7 @@ class StudentDetailsScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-                color: Color(0xFF87CEEB),
+                color: Color(0XFF4B0082),
               ),
             ),
             SizedBox(height: 16),
@@ -46,7 +46,7 @@ class StudentDetailsScreen extends StatelessWidget {
               height: 200,
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Color(0XFF1A1A1A),
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
@@ -73,7 +73,7 @@ class StudentDetailsScreen extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Color(0XFF1A1A1A),
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(color: Colors.black12, blurRadius: 8, offset: Offset(0, 5)),
@@ -83,8 +83,8 @@ class StudentDetailsScreen extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 30,
-            backgroundColor: Color(0xFF87CEEB),
-            child: Icon(Icons.person, color: Colors.white, size: 30),
+            backgroundColor: Color(0XFF4B0082),
+            child: Icon(Icons.person, color: Color(0XFF1A1A1A), size: 30),
           ),
           SizedBox(width: 16),
           Expanded(
@@ -135,7 +135,7 @@ class StudentDetailsScreen extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Color(0XFF1A1A1A),
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(color: Colors.black12, blurRadius: 8, offset: Offset(0, 5)),
@@ -144,14 +144,14 @@ class StudentDetailsScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(icon, color: Color(0xFF87CEEB), size: 32),
+          Icon(icon, color: Color(0XFF4B0082), size: 32),
           SizedBox(height: 12),
           Text(
             value,
             style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
-              color: Color(0xFF87CEEB),
+              color: Color(0XFF4B0082),
             ),
           ),
           SizedBox(height: 4),

@@ -24,14 +24,14 @@ class _SendAlertsScreenState extends State<SendAlertsScreen> {
     return Scaffold(
       drawer: AurioDrawer(),
 
-      backgroundColor: const Color(0xFFf5f6f5),
+      backgroundColor: const Color(0XFF1A1A1A),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0XFF1A1A1A),
         elevation: 1,
         title: Text(
           'Send Alerts',
           style: TextStyle(
-            color: Color(0xFF87CEEB),
+            color: Color(0XFF4B0082),
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -47,14 +47,14 @@ class _SendAlertsScreenState extends State<SendAlertsScreen> {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18,
-                color: Color(0xFF87CEEB),
+                color: Color(0XFF4B0082),
               ),
             ),
             SizedBox(height: 8),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 12),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Color(0XFF1A1A1A),
                 borderRadius: BorderRadius.circular(12),
                 boxShadow: [
                   BoxShadow(
@@ -88,13 +88,13 @@ class _SendAlertsScreenState extends State<SendAlertsScreen> {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18,
-                color: Color(0xFF87CEEB),
+                color: Color(0XFF4B0082),
               ),
             ),
             SizedBox(height: 8),
             Container(
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Color(0XFF1A1A1A),
                 borderRadius: BorderRadius.circular(12),
                 boxShadow: [
                   BoxShadow(
@@ -125,7 +125,7 @@ class _SendAlertsScreenState extends State<SendAlertsScreen> {
                   messageController.clear();
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF87CEEB),
+                  backgroundColor: Color(0XFF4B0082),
                   padding: EdgeInsets.symmetric(horizontal: 40, vertical: 14),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
@@ -133,7 +133,7 @@ class _SendAlertsScreenState extends State<SendAlertsScreen> {
                 ),
                 child: Text(
                   "Send Alert",
-                  style: TextStyle(fontSize: 18, color: Colors.white),
+                  style: TextStyle(fontSize: 18, color: Color(0XFF1A1A1A)),
                 ),
               ),
             ),

@@ -44,14 +44,14 @@ class FeedbackScreen extends StatelessWidget {
     return Scaffold(
       drawer: AurioDrawer(),
 
-      backgroundColor: const Color(0xFFf5f6f5),
+      backgroundColor: const Color(0XFF1A1A1A),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0XFF1A1A1A),
         elevation: 1,
         title: Text(
           'Feedback',
           style: TextStyle(
-            color: Color(0xFF87CEEB),
+            color: Color(0XFF4B0082),
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -66,7 +66,7 @@ class FeedbackScreen extends StatelessWidget {
             margin: EdgeInsets.only(bottom: 16),
             padding: EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Color(0XFF1A1A1A),
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
@@ -82,8 +82,8 @@ class FeedbackScreen extends StatelessWidget {
                 Row(
                   children: [
                     CircleAvatar(
-                      backgroundColor: Color(0xFF87CEEB),
-                      child: Icon(Icons.person, color: Colors.white),
+                      backgroundColor: Color(0XFF4B0082),
+                      child: Icon(Icons.person, color: Color(0XFF1A1A1A)),
                     ),
                     SizedBox(width: 16),
                     Expanded(
@@ -107,7 +107,7 @@ class FeedbackScreen extends StatelessWidget {
                       child: Text(
                         feedback['type']!,
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Color(0XFF1A1A1A),
                           fontWeight: FontWeight.bold,
                         ),
                       ),

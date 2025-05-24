@@ -6,14 +6,14 @@ class AdminProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFf5f6f5),
+      backgroundColor: const Color(0XFF1A1A1A),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0XFF1A1A1A),
         elevation: 1,
         title: Text(
           'My Profile',
           style: TextStyle(
-            color: Color(0xFF87CEEB),
+            color: Color(0XFF4B0082),
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -26,7 +26,7 @@ class AdminProfileScreen extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Color(0XFF1A1A1A),
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
@@ -40,11 +40,11 @@ class AdminProfileScreen extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: 50,
-                    backgroundColor: Color(0xFF87CEEB),
+                    backgroundColor: Color(0XFF4B0082),
                     child: Icon(
                       Icons.admin_panel_settings,
                       size: 50,
-                      color: Colors.white,
+                      color: Color(0XFF1A1A1A),
                     ),
                   ),
                   SizedBox(height: 16),
@@ -67,7 +67,7 @@ class AdminProfileScreen extends StatelessWidget {
                     child: Text(
                       "Admin",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Color(0XFF1A1A1A),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -81,7 +81,7 @@ class AdminProfileScreen extends StatelessWidget {
                 // TODO: Edit profile logic
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xFF87CEEB),
+                backgroundColor: Color(0XFF4B0082),
                 minimumSize: Size(double.infinity, 50),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
@@ -89,7 +89,7 @@ class AdminProfileScreen extends StatelessWidget {
               ),
               child: Text(
                 "Edit Profile",
-                style: TextStyle(color: Colors.white, fontSize: 18),
+                style: TextStyle(color: Color(0XFF1A1A1A), fontSize: 18),
               ),
             ),
             SizedBox(height: 16),
@@ -103,7 +103,7 @@ class AdminProfileScreen extends StatelessWidget {
                 );
               },
               style: OutlinedButton.styleFrom(
-                side: BorderSide(color: Color(0xFF87CEEB)),
+                side: BorderSide(color: Color(0XFF4B0082)),
                 minimumSize: Size(double.infinity, 50),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
@@ -111,7 +111,7 @@ class AdminProfileScreen extends StatelessWidget {
               ),
               child: Text(
                 "Logout",
-                style: TextStyle(color: Color(0xFF87CEEB), fontSize: 18),
+                style: TextStyle(color: Color(0XFF4B0082), fontSize: 18),
               ),
             ),
           ],

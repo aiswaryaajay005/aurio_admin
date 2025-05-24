@@ -15,14 +15,14 @@ class StudentsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: AurioDrawer(),
-      backgroundColor: const Color(0xFFf5f6f5),
+      backgroundColor: const Color(0XFF1A1A1A),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0XFF1A1A1A),
         elevation: 1,
         title: Text(
           'Students',
           style: TextStyle(
-            color: Color(0xFF87CEEB),
+            color: Color(0XFF4B0082),
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -46,7 +46,7 @@ class StudentsScreen extends StatelessWidget {
               margin: EdgeInsets.only(bottom: 16),
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Color(0XFF1A1A1A),
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
@@ -59,8 +59,8 @@ class StudentsScreen extends StatelessWidget {
               child: Row(
                 children: [
                   CircleAvatar(
-                    backgroundColor: Color(0xFF87CEEB),
-                    child: Icon(Icons.person, color: Colors.white),
+                    backgroundColor: Color(0XFF4B0082),
+                    child: Icon(Icons.person, color: Color(0XFF1A1A1A)),
                   ),
                   SizedBox(width: 16),
                   Expanded(

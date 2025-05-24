@@ -11,7 +11,7 @@ class DashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: AurioDrawer(),
-      backgroundColor: const Color(0xFFf5f6f5),
+      backgroundColor: const Color(0XFF0C0C1A),
       appBar: AurioAppBar(title: "Dashboard"),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -59,8 +59,9 @@ class DashboardScreen extends StatelessWidget {
   }) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Color(0XFF0C0C1A),
         borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Color(0XFF4B0082), width: 2),
         boxShadow: [
           BoxShadow(color: Colors.black12, blurRadius: 8, offset: Offset(0, 5)),
         ],
@@ -69,14 +70,14 @@ class DashboardScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(icon, size: 40, color: Color(0xFF87CEEB)),
+          Icon(icon, size: 40, color: Color(0XFF4B0082)),
           SizedBox(height: 16),
           Text(
             value,
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
-              color: Color(0xFF87CEEB),
+              color: Color(0XFF4B0082),
             ),
           ),
           SizedBox(height: 8),

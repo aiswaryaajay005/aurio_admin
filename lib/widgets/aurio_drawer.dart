@@ -18,21 +18,25 @@ class AurioDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0XFF1A1A1A),
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
           DrawerHeader(
-            decoration: BoxDecoration(color: Color(0xFF87CEEB)),
+            decoration: BoxDecoration(color: Color(0XFF4B0082)),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(Icons.admin_panel_settings, color: Colors.white, size: 40),
+                Icon(
+                  Icons.admin_panel_settings,
+                  color: Color(0XFF1A1A1A),
+                  size: 40,
+                ),
                 SizedBox(height: 12),
                 Text(
                   'Aurio Admin',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color(0XFF1A1A1A),
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
                   ),
@@ -125,8 +129,12 @@ class AurioDrawer extends StatelessWidget {
     String routeName,
   ) {
     return ListTile(
+      tileColor: Color(0XFF1A1A1A),
       leading: Icon(icon, color: Color(0xFF8c8c8c)),
-      title: Text(title),
+      title: Text(
+        title,
+        style: TextStyle(color: Color(0xFF00CED1), fontSize: 16),
+      ),
       onTap: () {
         Navigator.pushNamedAndRemoveUntil(context, routeName, (route) => false);
       },

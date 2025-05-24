@@ -7,14 +7,14 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFf5f6f5), // Light background
+      backgroundColor: const Color(0XFF1A1A1A), // Light background
       body: Center(
         child: SingleChildScrollView(
           child: Container(
             margin: EdgeInsets.all(24),
             padding: EdgeInsets.all(24),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Color(0XFF0C0C1A),
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
@@ -32,7 +32,7 @@ class LoginScreen extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
-                    color: Color(0xFF87CEEB),
+                    color: Color(0XFF4B0082),
                   ),
                 ),
                 SizedBox(height: 8),
@@ -58,7 +58,7 @@ class LoginScreen extends StatelessWidget {
                 SizedBox(height: 24),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFF87CEEB),
+                    backgroundColor: Color(0XFF4B0082),
                     minimumSize: Size(double.infinity, 50),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -74,7 +74,7 @@ class LoginScreen extends StatelessWidget {
                   },
                   child: Text(
                     "Login",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
+                    style: TextStyle(color: Color(0XFF1A1A1A), fontSize: 18),
                   ),
                 ),
                 SizedBox(height: 12),

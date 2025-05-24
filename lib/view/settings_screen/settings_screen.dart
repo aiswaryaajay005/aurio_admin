@@ -16,14 +16,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: AurioDrawer(),
-      backgroundColor: const Color(0xFFf5f6f5),
+      backgroundColor: const Color(0XFF1A1A1A),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0XFF1A1A1A),
         elevation: 1,
         title: Text(
           'Settings',
           style: TextStyle(
-            color: Color(0xFF87CEEB),
+            color: Color(0XFF4B0082),
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -34,7 +34,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Color(0XFF1A1A1A),
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
@@ -52,7 +52,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   value: isDarkMode,
-                  activeColor: Color(0xFF87CEEB),
+                  activeColor: Color(0XFF4B0082),
                   onChanged: (value) {
                     setState(() {
                       isDarkMode = value;

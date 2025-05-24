@@ -9,14 +9,14 @@ class AnalyticsScreen extends StatelessWidget {
     return Scaffold(
       drawer: AurioDrawer(),
 
-      backgroundColor: const Color(0xFFf5f6f5),
+      backgroundColor: const Color(0XFF1A1A1A),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0XFF1A1A1A),
         elevation: 1,
         title: Text(
           'Analytics',
           style: TextStyle(
-            color: Color(0xFF87CEEB),
+            color: Color(0XFF4B0082),
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -42,7 +42,7 @@ class AnalyticsScreen extends StatelessWidget {
       width: double.infinity,
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Color(0XFF1A1A1A),
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(color: Colors.black12, blurRadius: 8, offset: Offset(0, 5)),
@@ -56,7 +56,7 @@ class AnalyticsScreen extends StatelessWidget {
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
-              color: Color(0xFF87CEEB),
+              color: Color(0XFF4B0082),
             ),
           ),
           SizedBox(height: 16),
@@ -64,7 +64,7 @@ class AnalyticsScreen extends StatelessWidget {
             height: 200,
             width: double.infinity,
             decoration: BoxDecoration(
-              color: const Color(0xFFf5f6f5),
+              color: const Color(0XFF1A1A1A),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Center(

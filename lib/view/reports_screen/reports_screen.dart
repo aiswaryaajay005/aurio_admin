@@ -15,21 +15,21 @@ class ReportsScreen extends StatelessWidget {
     return Scaffold(
       drawer: AurioDrawer(),
 
-      backgroundColor: const Color(0xFFf5f6f5),
+      backgroundColor: const Color(0XFF1A1A1A),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0XFF1A1A1A),
         elevation: 1,
         title: Text(
           'Reports',
           style: TextStyle(
-            color: Color(0xFF87CEEB),
+            color: Color(0XFF4B0082),
             fontWeight: FontWeight.bold,
           ),
         ),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton.extended(
-        backgroundColor: Color(0xFF87CEEB),
+        backgroundColor: Color(0XFF4B0082),
         onPressed: () {
           // TODO: Generate Report Logic
         },
@@ -45,7 +45,7 @@ class ReportsScreen extends StatelessWidget {
             margin: EdgeInsets.only(bottom: 16),
             padding: EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Color(0XFF1A1A1A),
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
@@ -57,7 +57,7 @@ class ReportsScreen extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Icon(Icons.description, size: 40, color: Color(0xFF87CEEB)),
+                Icon(Icons.description, size: 40, color: Color(0XFF4B0082)),
                 SizedBox(width: 16),
                 Expanded(
                   child: Column(
